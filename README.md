@@ -19,8 +19,3 @@
 * Any other relevant information, images/tables, references, etc.
 
 * References
-
-
-* This is the first bullet
-* _this is itlicized_
-* **This is bold**
