@@ -11,6 +11,9 @@
 * Datasets you will use (with links, if available)
 
 * Tools/packages you’ll use (with links)
+    * We are going to need to learn how to ingest data from the General Bikeshare Feed Specification ([GBFS](https://gbfs.org/guide/)).
+
+
 
 * Planned methodology/approach
 
