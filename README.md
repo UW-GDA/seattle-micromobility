@@ -92,7 +92,7 @@ By merging **trip data** (where and when people ride) with **collision records**
 
 ## 6. Planned Methodology & Approach
 
----
+First visualise the data table to find the variables in each dataset. There is the need to determine if the variables are dependant/independant of each other, thus a **correlation analysis** of the variables would be conducted to determine those relations. The variables with positive correlations would be  mapped/visualised to properly appreciate the relationships. **Kernel density mapping** would be used to show hospot areas of high-usage & high correaltion areas for micromobility. The usage patterns would be determined using **geospatial correlations** on slope and land use.
 
 ## 7. Expected Outcomes
 
