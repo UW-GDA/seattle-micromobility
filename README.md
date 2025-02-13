@@ -87,6 +87,10 @@ By merging **trip data** (where and when people ride) with **collision records**
 
 * Tools/packages you’ll use (with links)
     * We are going to need to learn how to ingest data from the General Bikeshare Feed Specification ([GBFS](https://gbfs.org/guide/)).
+    * Geopandas: https://github.com/geopandas/geopandas
+    * Numpy: https://github.com/numpy/numpy
+    * Matplotlib: https://github.com/matplotlib/matplotlib
+  
 ---
 
 ## 6. Planned Methodology & Approach
