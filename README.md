@@ -102,4 +102,8 @@ First visualise the data table to find the variables in each dataset. There is t
 
 * Any other relevant information, images/tables, references, etc.
 
-* References
+## 8. References
+1. Seattle Department of Transportation (SDOT).** (2021). *E-Scooter Pilot Program Evaluation Report. Seattle, WA.
+2. National Association of City Transportation Officials (NACTO). (2022). Shared Micromobility in the U.S.: 2022 Snapshot. [https://nacto.org](https://nacto.org)
+3. Seattle Department of Transportation (SDOT). (2022). Collision Data Dashboard. [https://www.seattle.gov/transportation/](https://www.seattle.gov/transportation/)
+4. King County Mobility Coalition. (2020). Mobility Needs Assessment for King County. King County, WA.
