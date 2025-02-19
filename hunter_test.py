@@ -1,6 +1,8 @@
 import requests
 import json
 
+OUTPUT_FILE = "data/station_information.json"
+
 def get_gbfs_data(url):
     """Fetches and parses GBFS data from a given URL."""
     try:
@@ -34,7 +36,8 @@ def main():
             station_info = get_gbfs_data(station_info_url)
             if station_info:
               print("\nStation Information:")
-              print(json.dumps(station_info, indent=2))
+              with open(OUTPUT_FILE, 'w') as json_file:
+                json.dumps(station_info, json_file, indent=2)
         except (KeyError, StopIteration) as e:
             print(f"Error accessing data: {e}")
 
