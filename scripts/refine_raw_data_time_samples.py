@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+"""Refine raw data by selecting files with timestamps at least 30 minutes apart."""
 import os
 import shutil
 from datetime import timedelta

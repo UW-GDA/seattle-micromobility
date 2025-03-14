@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """This file is used to fetch new gtfs data regularly."""
 import os
 from pathlib import Path

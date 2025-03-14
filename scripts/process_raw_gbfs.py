@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+"""Process raw GBFS data into a single GeoJSON file."""
 import os
 from datetime import datetime
 import geopandas as gpd
