@@ -1,6 +1,6 @@
 # **Seattle Micromobility: Spatiotemporal Analysis, Safety Hotspots & Geographic Influences** 🚲🛴
 
-**Group members:** Sruangsaeng, Hunter, Ysabel, Alidu
+**Group members:** Abdul-Razak Alidu, Sruangsaeng Chaikasetsin, Hunter Lybbert, Ysabel Yu
 
 ---
  
@@ -76,8 +76,7 @@ By merging **trip data** (where and when people ride) with **collision records**
         - Road Weather Information Stations  
 
 3. **Geographic & Slope Data** 🌍  
-    - **🔗 [Washington State DNR LiDAR Portal](https://lidarportal.dnr.wa.gov/#45.85941:-120.23438:6)** – High-resolution LiDAR elevation data for slope analysis  
-    - **🔗 [Seattle ECA Steep Slope Dataset](https://data-seattlecitygis.opendata.arcgis.com/)** – Identifies areas with slopes ≥40%  
+    - **🔗 [Washington State DNR LiDAR Portal](https://lidarportal.dnr.wa.gov/#45.85941:-120.23438:6)** – 2016 King Country high-resolution LiDAR elevation data for slope analysis  
 
 ---
 
@@ -88,6 +87,11 @@ By merging **trip data** (where and when people ride) with **collision records**
     * Geopandas: https://github.com/geopandas/geopandas
     * Numpy: https://github.com/numpy/numpy
     * Matplotlib: https://github.com/matplotlib/matplotlib
+    * Rasterio: https://github.com/rasterio/rasterio
+    * Rioxarray: https://github.com/corteva/rioxarray
+    * Xarray: https://github.com/pydata/xarray
+    * Rasterstats: https://github.com/perrygeo/python-rasterstats
+    * Contextily: https://github.com/geopandas/contextily
 ---
 
 ## 6. Planned Methodology & Approach
@@ -100,7 +104,6 @@ First visualise the data table to find the variables in each dataset. There is t
 ✔ **Time-series insights** – Micromobility demand across time periods  
 ✔ **Geospatial correlations** – Influence of slope & land use on usage patterns  
 
-* Any other relevant information, images/tables, references, etc.
 
 ## 8. References
 1. Seattle Department of Transportation (SDOT).** (2021). *E-Scooter Pilot Program Evaluation Report. Seattle, WA.
