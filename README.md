@@ -50,28 +50,8 @@ By merging **trip data** (where and when people ride) with **collision records**
         - SDOT Bike Facilities  
         - Bicycle Racks  
         - Sidewalks  
-        - SDOT Channelization View  
-        - Seattle Transportation Plan Bicycle Element  
-        - Marked Crosswalks  
-        - Beacon Assemblies
-    - **🚊 Transit & Traffic Features**  
-        - Frequent Transit Service Areas  
-        - Streetcar Lines & Stations  
-        - Areaways  
-        - School Zones  
-        - Railroad Crossings  
-        - SDOT Intersections  
-        - Transportation Table - Seattle Neighborhoods  
-        - Current Land Use Zoning Detail
     - **Seattle Open Data Portal**  
 🔗 [Seattle Open Data](https://data.seattle.gov)  
-    - **🚲 Micromobility Counters**  
-        - Spokane St Bridge Bicycle Counter  
-        - Thomas St Overpass Bike & Ped Counter  
-        - 2nd Ave Cycle Track North of Marion St Bicycle Counter  
-        - Elliott Bay Trail in Myrtle Edwards Park Bicycle & Pedestrian Counter  
-        - Burke Gilman Trail North of NE 70th St Bicycle & Pedestrian Counter  
-        - Fremont Bridge Bicycle Counter  
     - **🌦️ Environmental Data**  
         - Road Weather Information Stations  
 
