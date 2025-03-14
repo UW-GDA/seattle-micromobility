@@ -80,8 +80,6 @@ First visualise the data table to find the variables in each dataset. There is t
 ✔ **Time-series insights** – Micromobility demand across time periods  
 ✔ **Geospatial correlations** – Influence of slope & land use on usage patterns  
 
-* Any other relevant information, images/tables, references, etc.
-
 ## 8. References
 1. Seattle Department of Transportation (SDOT).** (2021). *E-Scooter Pilot Program Evaluation Report. Seattle, WA.
 2. National Association of City Transportation Officials (NACTO). (2022). Shared Micromobility in the U.S.: 2022 Snapshot. [https://nacto.org](https://nacto.org)
