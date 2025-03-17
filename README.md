@@ -76,9 +76,9 @@ By merging **trip data** (where and when people ride) with **collision records**
 
 ## 6. Methodology & Approach
 
-**Spatiotemporal Patterns**:
+**Spatiotemporal Patterns**: Bikeshare counter data was plotted on maps by Seattle neighborhood and turned into animations to show bikeshare changes over time. Scooter and bike distribbutions were plotted using Kernel Density Estimation to find micromobility use hotspots. This data was also used to do a time series analysis per hour and per day to find patterns in usage.
 
-**Collision Hotspots**:
+**Collision Hotspots**: A large part of the collision analysis was cleaning the datasets. This included dropping unnecessary columns and duplications, handling missing data, converting date-time data, and converting the CRS. Exploratory data analysis was done by year to show the number of collisions (along with person count, injuries, etc.) per year. The cleaned data was also used to determine distribution of micromobility collision severity by year. Collisions were plotted on a map and made into a Kernal Density Estimation to find collision hotspots. 
 
 **Geospatial Correlation**:
 Geospatial correlation methods were split into 2 main parts: raster manipulation and road zonal stats. Firstly, a full Seattle DTM raster was created from smaller raster sets provided by King County. From this a slope raster was created and used to calculate zonal stats for roads in U District and Downtown. The stats showed the mean slope of those roads and highlighted where slopes were greatest using plots.
