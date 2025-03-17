@@ -74,15 +74,20 @@ By merging **trip data** (where and when people ride) with **collision records**
     * Contextily: https://github.com/geopandas/contextily
 ---
 
-## 6. Planned Methodology & Approach
+## 6. Methodology & Approach
 
-First visualise the data table to find the variables in each dataset. There is the need to determine if the variables are dependant/independant of each other, thus a **correlation analysis** of the variables would be conducted to determine those relations. The variables with positive correlations would be  mapped/visualised to properly appreciate the relationships. **Kernel density mapping** would be used to show hospot areas of high-usage & high correaltion areas for micromobility. The usage patterns would be determined using **geospatial correlations** on slope and land use.
+**Spatiotemporal Patterns**:
 
-## 7. Expected Outcomes
+**Collision Hotspots**:
 
-✔ **Hotspot maps** – High-usage & high-collision areas for micromobility  
-✔ **Time-series insights** – Micromobility demand across time periods  
-✔ **Geospatial correlations** – Influence of slope & land use on usage patterns  
+**Geospatial Correlation**:
+Geospatial correlation methods were split into 2 main parts: raster manipulation and road zonal stats. Firstly, a full Seattle DTM raster was created from smaller raster sets provided by King County. From this a slope raster was created and used to calculate zonal stats for roads in U District and Downtown. The stats showed the mean slope of those roads and highlighted where slopes were greatest using plots.
+
+## 7. Results, Conclusions, and Future Directions
+
+Results show that... (____ places are high usage, ___ places are high collision areas, highest demand happens across ____ time period, slope does/doesn't seem to affect usage/collision...)
+From this we conclude that...
+For future transportation design, we recommend that _____ be considered because of the data analyzed above...
 
 
 ## 8. References
