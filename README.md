@@ -1,6 +1,6 @@
 # **Seattle Micromobility: Spatiotemporal Analysis, Safety Hotspots & Geographic Influences** 🚲🛴
 
-**Group members:** Sruangsaeng, Hunter, Ysabel, Alidu
+**Group members:** Abdul-Razak Alidu, Sruangsaeng Chaikasetsin, Hunter Lybbert, Ysabel Yu
 
 ---
  
@@ -50,34 +50,13 @@ By merging **trip data** (where and when people ride) with **collision records**
         - SDOT Bike Facilities  
         - Bicycle Racks  
         - Sidewalks  
-        - SDOT Channelization View  
-        - Seattle Transportation Plan Bicycle Element  
-        - Marked Crosswalks  
-        - Beacon Assemblies
-    - **🚊 Transit & Traffic Features**  
-        - Frequent Transit Service Areas  
-        - Streetcar Lines & Stations  
-        - Areaways  
-        - School Zones  
-        - Railroad Crossings  
-        - SDOT Intersections  
-        - Transportation Table - Seattle Neighborhoods  
-        - Current Land Use Zoning Detail
     - **Seattle Open Data Portal**  
 🔗 [Seattle Open Data](https://data.seattle.gov)  
-    - **🚲 Micromobility Counters**  
-        - Spokane St Bridge Bicycle Counter  
-        - Thomas St Overpass Bike & Ped Counter  
-        - 2nd Ave Cycle Track North of Marion St Bicycle Counter  
-        - Elliott Bay Trail in Myrtle Edwards Park Bicycle & Pedestrian Counter  
-        - Burke Gilman Trail North of NE 70th St Bicycle & Pedestrian Counter  
-        - Fremont Bridge Bicycle Counter  
     - **🌦️ Environmental Data**  
         - Road Weather Information Stations  
 
 3. **Geographic & Slope Data** 🌍  
-    - **🔗 [Washington State DNR LiDAR Portal](https://lidarportal.dnr.wa.gov/#45.85941:-120.23438:6)** – High-resolution LiDAR elevation data for slope analysis  
-    - **🔗 [Seattle ECA Steep Slope Dataset](https://data-seattlecitygis.opendata.arcgis.com/)** – Identifies areas with slopes ≥40%  
+    - **🔗 [Washington State DNR LiDAR Portal](https://lidarportal.dnr.wa.gov/#45.85941:-120.23438:6)** – 2016 King Country high-resolution LiDAR elevation data for slope analysis  
 
 ---
 
@@ -88,19 +67,28 @@ By merging **trip data** (where and when people ride) with **collision records**
     * Geopandas: https://github.com/geopandas/geopandas
     * Numpy: https://github.com/numpy/numpy
     * Matplotlib: https://github.com/matplotlib/matplotlib
+    * Rasterio: https://github.com/rasterio/rasterio
+    * Rioxarray: https://github.com/corteva/rioxarray
+    * Xarray: https://github.com/pydata/xarray
+    * Rasterstats: https://github.com/perrygeo/python-rasterstats
+    * Contextily: https://github.com/geopandas/contextily
 ---
 
-## 6. Planned Methodology & Approach
+## 6. Methodology & Approach
 
-First visualise the data table to find the variables in each dataset. There is the need to determine if the variables are dependant/independant of each other, thus a **correlation analysis** of the variables would be conducted to determine those relations. The variables with positive correlations would be  mapped/visualised to properly appreciate the relationships. **Kernel density mapping** would be used to show hospot areas of high-usage & high correaltion areas for micromobility. The usage patterns would be determined using **geospatial correlations** on slope and land use.
+**Spatiotemporal Patterns**: Bikeshare counter data was plotted on maps by Seattle neighborhood and turned into animations to show bikeshare changes over time. Scooter and bike distribbutions were plotted using Kernel Density Estimation to find micromobility use hotspots. This data was also used to do a time series analysis per hour and per day to find patterns in usage.
 
-## 7. Expected Outcomes
+**Collision Hotspots**: A large part of the collision analysis was cleaning the datasets. This included dropping unnecessary columns and duplications, handling missing data, converting date-time data, and converting the CRS. Exploratory data analysis was done by year to show the number of collisions (along with person count, injuries, etc.) per year. The cleaned data was also used to determine distribution of micromobility collision severity by year. Collisions were plotted on a map and made into a Kernal Density Estimation to find collision hotspots. 
 
-✔ **Hotspot maps** – High-usage & high-collision areas for micromobility  
-✔ **Time-series insights** – Micromobility demand across time periods  
-✔ **Geospatial correlations** – Influence of slope & land use on usage patterns  
+**Geospatial Correlation**:
+Geospatial correlation methods were split into 2 main parts: raster manipulation and road zonal stats. Firstly, a full Seattle DTM raster was created from smaller raster sets provided by King County. From this a slope raster was created and used to calculate zonal stats for roads in U District and Downtown. The stats showed the mean slope of those roads and highlighted where slopes were greatest using plots.
 
-* Any other relevant information, images/tables, references, etc.
+## 7. Results, Conclusions, and Future Directions
+
+Results show that... (____ places are high usage, ___ places are high collision areas, highest demand happens across ____ time period, slope does/doesn't seem to affect usage/collision...)
+From this we conclude that...
+For future transportation design, we recommend that _____ be considered because of the data analyzed above...
+
 
 ## 8. References
 1. Seattle Department of Transportation (SDOT).** (2021). *E-Scooter Pilot Program Evaluation Report. Seattle, WA.
