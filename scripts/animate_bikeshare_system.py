@@ -22,7 +22,7 @@ from IPython.display import HTML
 
 logger = setup_logger(__name__)
 
-DEFAULT_BIKESHARE_FILE = "processed_gbfs_data/bikeshare_2025-02-28_15-44-09.geojson"
+DEFAULT_BIKESHARE_FILE = "processed_data/bikeshare_2025-02-28_15-44-09.geojson"
 SEATTLE_GEOJSON_URL = "https://raw.githubusercontent.com/seattleflu/seattle-geojson/master/seattle_geojsons/2016_seattle_city.geojson"
 NEIGHBORHOOD_BOUNDARIES_URL = "https://raw.githubusercontent.com/seattleio/seattle-boundaries-data/refs/heads/master/data/neighborhoods.geojson"
 
