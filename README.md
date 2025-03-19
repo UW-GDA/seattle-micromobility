@@ -23,13 +23,13 @@ By merging **trip data** (where and when people ride) with **collision records**
 
 **Problem Statement**
 1. **Where** do e-scooter and bike share trips cluster, and do these align with collision-prone zones?
-2. **How** do factors like slope, proximity to transit, or land use affect micromobility usage and collision risk?
+2. **How** do factors like slope, proximity to infracstructure, or land use affect micromobility usage and crash risk?
 
 **Objectives**
 1. **Spatiotemporal Patterns**
     - Identify ridership peaks (daily/weekly/seasonal) and produce usage hotspot maps.
 2. **Collision Hotspots**
-    - Detect VRU collision clusters using kernel density or Density-Based Spatial Clustering of Applications with Noise (DBSCAN) to compare with usage patterns.
+    - Detect VRU collision clusters using Kernel Density Estimation (KDE) to compare with usage patterns.
 3. **Geographic Factors**
     - Integrate slope or land-use data to see how terrain/environment shapes micromobility usage and collisions.
 
@@ -51,9 +51,6 @@ By merging **trip data** (where and when people ride) with **collision records**
         - Bicycle Racks  
         - Sidewalks  
     - **Seattle Open Data Portal**  
-🔗 [Seattle Open Data](https://data.seattle.gov)  
-    - **🌦️ Environmental Data**  
-        - Road Weather Information Stations  
 
 3. **Geographic & Slope Data** 🌍  
     - **🔗 [Washington State DNR LiDAR Portal](https://lidarportal.dnr.wa.gov/#45.85941:-120.23438:6)** – 2016 King Country high-resolution LiDAR elevation data for slope analysis  
@@ -78,7 +75,7 @@ By merging **trip data** (where and when people ride) with **collision records**
 
 **Spatiotemporal Patterns**: Bikeshare counter data was plotted on maps by Seattle neighborhood and turned into animations to show bikeshare changes over time. Scooter and bike distribbutions were plotted using Kernel Density Estimation to find micromobility use hotspots. This data was also used to do a time series analysis per hour and per day to find patterns in usage.
 
-**Collision Hotspots**: A large part of the collision analysis was cleaning the datasets. This included dropping unnecessary columns and duplications, handling missing data, converting date-time data, and converting the CRS. Exploratory data analysis was done by year to show the number of collisions (along with person count, injuries, etc.) per year. The cleaned data was also used to determine distribution of micromobility collision severity by year. Collisions were plotted on a map and made into a Kernal Density Estimation to find collision hotspots. 
+**Collision Hotspots**: For our collision hotspot analysis, we examined Seattle Department of Transportation (SDOT) collision data from 2020 to February 2025, focusing on crashes involving vulnerable road users (VRUs) such as pedestrians, cyclists, and scooter riders. We began by cleaning the dataset—removing duplicates, addressing missing values, converting date-time fields for consistency, and setting the appropriate coordinate reference system (CRS) for geospatial work. Next, we conducted exploratory analysis to tally collisions by year and assess severity, finding that 21% resulted in serious injuries. To uncover spatiotemporal patterns, we mapped crashes by hour, day, and month, then applied Kernel Density Estimation (KDE) to identify hotspot locations. We also performed a proximity analysis using GeoPandas’ `sjoin_nearest` function to determine how many collisions occurred within 50 meters of bike facilities and sidewalks, revealing infrastructure-related risks. Finally, we calculated per-capita collision rates by neighborhood, normalizing crash counts per 1000 residents to highlight areas with disproportionate risk. This multi-step approach, detailed in `notebooks/collision`, anchors our safety insights. 
 
 **Geospatial Correlation**:
 Geospatial correlation methods were split into 2 main parts: raster manipulation and road zonal stats. Firstly, a full Seattle DTM raster was created from smaller raster sets provided by King County. From this a slope raster was created and used to calculate zonal stats for roads in U District and Downtown. The stats showed the mean slope of those roads and highlighted where slopes were greatest using plots.
@@ -88,6 +85,19 @@ Geospatial correlation methods were split into 2 main parts: raster manipulation
 Results show that... (____ places are high usage, ___ places are high collision areas, highest demand happens across ____ time period, slope does/doesn't seem to affect usage/collision...)
 From this we conclude that...
 For future transportation design, we recommend that _____ be considered because of the data analyzed above...
+
+**Conclusion**
+
+Our analysis revealed key safety insights for Seattle’s micromobility landscape. 
+- **Safety Gaps**: High-usage zones like Downtown often correlate with more crashes, but infrastructure plays a critical role—bike facilities show higher risks (~60% of collisions) compared to multi-used trails (~5%), likely due to conflict with the vehicle traffic.
+- **Limits**: A key limitation is that collision data lacks real-time trip counts, making usage overlap estimates approximate rather than precise.
+
+**Future Directions**
+
+To build on this work, we propose several next steps:
+- **Normalize collision rates** with actual trip data (not just availability) for a clearer usage-crash link.
+- **Expand land use analysis** to include factors like transit stops and commercial zones, which may further influence risk.
+- **Refine hotspot detection** using DBSCAN to identify tighter, more actionable clusters compared to KDE’s broader smoothing.
 
 
 ## 8. References
