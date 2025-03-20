@@ -3,9 +3,29 @@
 **Group members:** Abdul-Razak Alidu, Sruangsaeng Chaikasetsin, Hunter Lybbert, Ysabel Yu
 
 ---
+## Table of Contents
+
+1. [Summary](#1-summary)
+2. [Introductory Background](#2-introductory-background)
+3. [Problem Statement & Objectives](#3-problem-statement--objectives)
+4. [Datasets](#4-datasets)
+5. [Tools & Packages](#5-tools--packages)
+6. [Methodology & Approach](#6-methodology--approach)
+7. [Results, Conclusions, and Future Directions](#7-results-conclusions-and-future-directions)
+8. [References](#8-references)
+
+---
  
 ## 1. Summary
 This project investigates **micromobility usage**-specifically e-scooters and bike share in Seattle. Our primary focus is to understand **where** and **when** people ride, locate potential **collision hotspots** involving vulnerable road users (pedestrians, cyclists, e-scooter riders), and examine **geographic factors** (like slope, transit proximity, land use) that may influence both usage and collisions. We hope these insights will guide data-driven enhancements to infrastructure, user behavior, and environmental considerations- ultimately fostering safer and more sustainable micromobility adoption.
+
+### Contents of the repo:
+* [**notebooks**](notebooks/) contains our jupyter notebooks where a majority of the data analysis we performed took place.
+There are subdirectories for each aspect of the work: [bikeshare](notebooks/bikeshare/) analysis, [collision](notebooks/collision/) analysis, and [raster](notebooks/raster/) based analysis
+* [**visuals**](visuals/) contains the many visualizations that we have created for this project.
+* [**sample_data**](sample_data/) contains a collection of samples of the data we used.
+Not all of the data could be included due to size constraints.
+* [**scripts**](scripts/) contains the scripts used in gathering and processing the bikeshare data.
 
 ---
 
@@ -59,16 +79,16 @@ By merging **trip data** (where and when people ride) with **collision records**
 
 ## 5. Tools & Packages
 
-* Tools/packages you’ll use (with links)
-    * We are going to need to learn how to ingest data from the General Bikeshare Feed Specification ([GBFS](https://gbfs.org/guide/)).
-    * Geopandas: https://github.com/geopandas/geopandas
-    * Numpy: https://github.com/numpy/numpy
-    * Matplotlib: https://github.com/matplotlib/matplotlib
-    * Rasterio: https://github.com/rasterio/rasterio
-    * Rioxarray: https://github.com/corteva/rioxarray
-    * Xarray: https://github.com/pydata/xarray
-    * Rasterstats: https://github.com/perrygeo/python-rasterstats
-    * Contextily: https://github.com/geopandas/contextily
+* Tools/packages used
+    * [Geopandas](https://github.com/geopandas/geopandas)
+    * [Numpy](https://github.com/numpy/numpy)
+    * [Matplotlib](https://github.com/matplotlib/matplotlib)
+    * [Rasterio](https://github.com/rasterio/rasterio)
+    * [Rioxarray](https://github.com/corteva/rioxarray)
+    * [Xarray](https://github.com/pydata/xarray)
+    * [Rasterstats](https://github.com/perrygeo/python-rasterstats)
+    * [Contextily](https://github.com/geopandas/contextily)
+    * [bikeshare-client-python](https://github.com/jakehadar/bikeshare-client-python) to access ([GBFS](https://gbfs.org/guide/))
 ---
 
 ## 6. Methodology & Approach
