@@ -81,14 +81,15 @@ By merging **trip data** (where and when people ride) with **collision records**
 
 * Tools/packages you’ll use (with links)
     * We are going to need to learn how to ingest data from the General Bikeshare Feed Specification ([GBFS](https://gbfs.org/guide/)).
-    * Geopandas: https://github.com/geopandas/geopandas
-    * Numpy: https://github.com/numpy/numpy
-    * Matplotlib: https://github.com/matplotlib/matplotlib
-    * Rasterio: https://github.com/rasterio/rasterio
-    * Rioxarray: https://github.com/corteva/rioxarray
-    * Xarray: https://github.com/pydata/xarray
-    * Rasterstats: https://github.com/perrygeo/python-rasterstats
-    * Contextily: https://github.com/geopandas/contextily
+    * [Geopandas](https://github.com/geopandas/geopandas)
+    * [Numpy](https://github.com/numpy/numpy)
+    * [Matplotlib](https://github.com/matplotlib/matplotlib)
+    * [Rasterio](https://github.com/rasterio/rasterio)
+    * [Rioxarray](https://github.com/corteva/rioxarray)
+    * [Xarray](https://github.com/pydata/xarray)
+    * [Rasterstats](https://github.com/perrygeo/python-rasterstats)
+    * [Contextily](https://github.com/geopandas/contextily)
+    * [bikeshare-client-python](https://github.com/jakehadar/bikeshare-client-python)
 ---
 
 ## 6. Methodology & Approach
