@@ -3,6 +3,18 @@
 **Group members:** Abdul-Razak Alidu, Sruangsaeng Chaikasetsin, Hunter Lybbert, Ysabel Yu
 
 ---
+## Table of Contents
+
+1. [Summary](#1-summary)
+2. [Introductory Background](#2-introductory-background)
+3. [Problem Statement & Objectives](#3-problem-statement--objectives)
+4. [Datasets](#4-datasets)
+5. [Tools & Packages](#5-tools--packages)
+6. [Methodology & Approach](#6-methodology--approach)
+7. [Results, Conclusions, and Future Directions](#7-results-conclusions-and-future-directions)
+8. [References](#8-references)
+
+---
  
 ## 1. Summary
 This project investigates **micromobility usage**-specifically e-scooters and bike share in Seattle. Our primary focus is to understand **where** and **when** people ride, locate potential **collision hotspots** involving vulnerable road users (pedestrians, cyclists, e-scooter riders), and examine **geographic factors** (like slope, transit proximity, land use) that may influence both usage and collisions. We hope these insights will guide data-driven enhancements to infrastructure, user behavior, and environmental considerations- ultimately fostering safer and more sustainable micromobility adoption.
@@ -14,8 +26,6 @@ There are subdirectories for each aspect of the work, [bikeshare](notebooks/bike
 3. [**sample_data**](sample_data/) contains a collection of samples of the data we used.
 Not all of the data could be included due to size constraints.
 4. [**scripts**](scripts/) contains the scripts used in gathering and processing the bikeshare data.
-
-**scripts**:
 
 ---
 
