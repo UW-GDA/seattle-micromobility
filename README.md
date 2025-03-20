@@ -7,6 +7,12 @@
 ## 1. Summary
 This project investigates **micromobility usage**-specifically e-scooters and bike share in Seattle. Our primary focus is to understand **where** and **when** people ride, locate potential **collision hotspots** involving vulnerable road users (pedestrians, cyclists, e-scooter riders), and examine **geographic factors** (like slope, transit proximity, land use) that may influence both usage and collisions. We hope these insights will guide data-driven enhancements to infrastructure, user behavior, and environmental considerations- ultimately fostering safer and more sustainable micromobility adoption.
 
+### Outline of contents of the repo:
+1. [**notebooks**](notebooks/) the jupyter notebooks where a majority of the data analysis was performed.
+There are subdirectories for each aspect of the work, bikeshare analysis, collision analysis, and raster based analysis
+
+**scripts**:
+
 ---
 
 ## 2. Introductory Background
