@@ -82,14 +82,12 @@ Geospatial correlation methods were split into 2 main parts: raster manipulation
 
 ## 7. Results, Conclusions, and Future Directions
 
-Results show that... (____ places are high usage, ___ places are high collision areas, highest demand happens across ____ time period, slope does/doesn't seem to affect usage/collision...)
-From this we conclude that...
-For future transportation design, we recommend that _____ be considered because of the data analyzed above...
-
 **Conclusion**
 
 Our analysis revealed key safety insights for Seattle’s micromobility landscape. 
+- **Micromobility Usage**:  High-usage zones like Downtown and U District often correlate with more crashes
 - **Safety Gaps**: High-usage zones like Downtown often correlate with more crashes, but infrastructure plays a critical role—bike facilities show higher risks (~60% of collisions) compared to multi-used trails (~5%), likely due to conflict with the vehicle traffic.
+- **Geographic Factor**: Slope is not an indicator for any of the above.
 - **Limits**: A key limitation is that collision data lacks real-time trip counts, making usage overlap estimates approximate rather than precise.
 
 **Future Directions**
